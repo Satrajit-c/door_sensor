@@ -1,0 +1,82 @@
+#include "Keyboard.h"
+
+int buttonPin = 9;
+
+void setup() {
+  pinMode(buttonPin, INPUT);  // Set the button as an input
+  digitalWrite(buttonPin, HIGH);  // Pull the button high
+  // make pin 2 an input and turn on the 
+  // pullup resistor so it goes high unless
+  // connected to ground:
+  pinMode(2, INPUT_PULLUP);
+  Keyboard.begin();
+  delay(2000);
+  Keyboard.press(0x83);
+  delay(100);
+  Keyboard.press('r');
+  delay(100);
+  Keyboard.releaseAll();
+  delay(1000);
+  Keyboard.print("cmd");
+  delay(100);
+  Keyboard.write(0xB0);
+  delay(1000);
+  Keyboard.print("touch times.txt");
+  delay(100);
+  Keyboard.write(0xB0);
+  delay(1000);
+  Keyboard.print("python");
+  delay(1000);
+  Keyboard.write(0xB0);
+  delay(1000);
+  Keyboard.print("import datetime");
+  delay(10);
+  Keyboard.write(0xB0);
+  delay(1000);
+  Keyboard.print("def door(term):");
+  delay(10);
+  Keyboard.write(0xB0);
+  delay(100);
+  Keyboard.print(" with open(\"times.txt\", \"a\") as myfile:");
+  delay(10);
+  Keyboard.write(0xB0);
+  delay(10);
+  Keyboard.print("  string = \"door \" + term + \" at \" + str(datetime.datetime.now()) + \"\\n\"");
+  delay(10);
+  Keyboard.write(0xB0);
+  delay(10);
+  Keyboard.print("  myfile.write(string)");
+  delay(10);
+  Keyboard.write(0xB0);
+  delay(10);
+  Keyboard.print("  myfile.close()");
+  delay(10);
+  Keyboard.write(0xB0);
+  delay(100);
+  Keyboard.write(0xB0);
+  delay(100);
+  
+}
+
+void loop() {
+  //if the button is pressed
+  if (digitalRead(buttonPin) == 0)  // if the button goes low
+  {
+    Keyboard.print("door(\"closed\")");
+    delay(100);
+    Keyboard.write(0xB0);
+    delay(1000);
+    while (digitalRead(buttonPin) == 0){
+      delay(100);
+    }
+  } 
+  else{
+    Keyboard.print("door(\"openned\")");
+    delay(100);
+    Keyboard.write(0xB0);
+    delay(1000);
+    while (digitalRead(buttonPin) == 1){
+      delay(100);
+    }
+  }
+}
