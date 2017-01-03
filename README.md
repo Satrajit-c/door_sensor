@@ -1,8 +1,6 @@
-## Welcome to GitHub Pa
+## Welcome to the door-sensor-3.14 project!!
 
-You can use the [editor on GitHub](https://github.com/Satrajit-c/door_sensor/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This project uses a switch on an arduino pro micro to track activities around a door and send you emails to your assigned email ID!
 
 ### Markdown
 
