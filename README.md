@@ -6,4 +6,4 @@ This project uses a switch on an arduino pro micro to track activities around a 
 
 ###The plan it is based on:
 
-![Image of plan](http://imgur.com/Qi35yQa)
+![Image of plan](http://i.imgur.com/Qi35yQa.jpg)
