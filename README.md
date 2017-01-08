@@ -2,4 +2,4 @@
 
 This project uses a switch on an arduino pro micro to track activities around a door and send you emails to your assigned email ID!
 
-![http://i.imgur.com/QAQWalH.jpg](src)
+![Image of the product](http://i.imgur.com/QAQWalH.jpg)
