@@ -25,11 +25,11 @@ void email(){
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
-  Keyboard.print("fromaddr = \"SENDER_ADDRESS\"");
+  Keyboard.print("fromaddr = \"doorlog1@gmail.com\"");
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
-  Keyboard.print("toaddr = \"RECEIEVER_ADDRESS\"");
+  Keyboard.print("toaddr = \"satrajit2013@gmail.com\"");
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
@@ -129,7 +129,7 @@ void email(){
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
-  Keyboard.print("  server.login(fromaddr, \"RAW password encoded in base 64".decode('base64'))");
+  Keyboard.print("  server.login(fromaddr, \"cDQ1NXcwcmQxNXRoMTU=\".decode('base64'))");
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
@@ -145,11 +145,11 @@ void email(){
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
-  Keyboard.print("");
+  Keyboard.print("  attachment.close()");
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
-  Keyboard.print("  f = open(\"times.txt\", \"w\")");
+  Keyboard.print("  f = open(filename, \"w\")");
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
@@ -161,10 +161,6 @@ void email(){
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
-  Keyboard.print("");
-  delay(10);
-  Keyboard.write(0xB0);
-  delay(10);
   Keyboard.print("except FileNotFoundError:");
   delay(10);
   Keyboard.write(0xB0);
@@ -173,6 +169,8 @@ void email(){
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
+  Keyboard.write(0xB0);
+  delay(100);
 //  timer_val = millis();
   turns = 0;
 }
